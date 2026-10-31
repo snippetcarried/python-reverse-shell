@@ -4,6 +4,8 @@
 
 A Python reverse shell for Windows. Run commands remotely, send messages, and pull system info. Educational project built from scratch.
 
+**🔓 100% Open Source** — All code is freely available. Modify, fork, and use however you want.
+
 ## Features
 
 - Remote command execution
@@ -57,7 +59,6 @@ pyinstaller --onefile ClientImproved.py
 
 | Command | Description |
 |---------|-------------|
-| `info` | Get geolocation of connected client (IP-based) |
 | `message <text>` | Send fullscreen popup message to target |
 | `clear` | Clear screen |
 | `help` | Show available commands |
