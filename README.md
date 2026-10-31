@@ -34,7 +34,7 @@ pip install requests
 ### Server (Your Computer)
 
 ```powershell
-python ServerImproved.py
+python server.py
 ```
 
 The server listens on `0.0.0.0:2002` and waits for client connections.
@@ -43,14 +43,14 @@ The server listens on `0.0.0.0:2002` and waits for client connections.
 
 **Option 1: Run Python directly**
 ```powershell
-python ClientImproved.py
+python client.py
 ```
 
 **Option 2: Compile to EXE (recommended)**
 ```powershell
 pip install pyinstaller
-pyinstaller --onefile ClientImproved.py
-# Then run dist/ClientImproved.exe on target
+pyinstaller --onefile client.py
+# Then run dist/client.exe on target
 ```
 
 ## Commands
@@ -103,7 +103,7 @@ Client initiates a reverse connection to the server. Server sends commands, clie
 
 ## Configuration
 
-Edit the client IP before running. In `ClientImproved.py`:
+Edit the client IP before running. In `client.py`:
 
 ```python
 ServerIP = '192.168.56.1'  # Your server IP
